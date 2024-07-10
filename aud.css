@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    color: #ededed;
+    background-image: url(wallpaper.jpeg);
+    
+}
+
+
+
+
+.audio {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(wallpaper.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 10% 0;
+
+}
+.audio-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -1px 0;
+}
+.audio-text h1 span {
+    color: #0ef;
+}
