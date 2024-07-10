@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    color: #ededed;
+    background-image: url(wallpaper.jpeg);
+    
+}
+
+
+
+
+.gameplay {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(wallpaper.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.gameplay-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -1px 0;
+}
+.gameplay-text h1 span {
+    color: #0ef;
+}
