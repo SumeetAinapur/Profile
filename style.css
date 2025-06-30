@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,9 +61,8 @@ body
     width: 100%;
 }
 
-.home-content p span{
-    color: #0ef;
-}
+
+
 
 .home {
     position: relative;
@@ -99,8 +97,12 @@ body
 }
 .home-content p {
     font-size: 20px;
-
 }
+
+.home-content p span{
+    color: #0ef;
+}
+
 .home-sci a {
     display: inline-flex;
     justify-content: center;
@@ -262,134 +264,4 @@ iframe {
     background: #0ef;
     color: #000;
     box-shadow: 0 0 20px #0ef;
-}
-
-@media (max-width: 768px) {
-    /* GENERAL LAYOUT FIXES */
-    body {
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 5%;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        gap: 8px;
-        font-size: 16px;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-        font-size: 16px;
-    }
-
-    /* HOME SECTION FIX */
-    .home {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        padding: 100px 5% 60px;
-    }
-
-    .home-content {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .home-content h1 {
-        font-size: 32px;
-    }
-
-    .home-content h3 {
-        font-size: 20px;
-    }
-
-    .home-content p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    .home-sci {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .home-sci a {
-        margin: 10px;
-    }
-
-    .btn-box {
-        font-size: 14px;
-        padding: 10px 20px;
-        margin-top: 15px;
-    }
-
-    /* SECTION HEIGHT FIX */
-    .hobbies, .location, .contact {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        padding: 80px 5% 60px;
-    }
-
-    /* HOBBIES TEXT */
-    .hobbies-text h1 {
-        font-size: 28px;
-    }
-
-    .hobbies-text h2,
-    .hobbies-text h3 {
-        font-size: 18px;
-    }
-
-    ol {
-        padding-left: 20px;
-        text-align: left;
-    }
-
-    /* LOCATION SECTION */
-    iframe {
-        width: 100% !important;
-        height: 300px !important;
-        margin-top: 20px;
-    }
-
-    /* CONTACT SECTION */
-    .contact-text h1 {
-        font-size: 32px;
-    }
-
-    .contact-list li {
-        font-size: 16px;
-        display: block;
-        margin: 10px 0;
-    }
-
-    .contact-icons {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .contact-icons a {
-        margin: 10px;
-    }
-
-    /* FIX OVERFLOW AND LINE BREAKS */
-    h1, h2, h3 {
-        word-break: break-word;
-        line-height: 1.3;
-    }
 }
