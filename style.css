@@ -62,8 +62,9 @@ body
     width: 100%;
 }
 
-
-
+.home-content p span{
+    color: #0ef;
+}
 
 .home {
     position: relative;
