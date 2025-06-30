@@ -265,10 +265,16 @@ iframe {
 }
 
 @media (max-width: 768px) {
+    /* GENERAL LAYOUT FIXES */
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     .header {
-        padding: 15px 5%;
         flex-direction: column;
         align-items: flex-start;
+        padding: 15px 5%;
     }
 
     .navbar {
@@ -276,59 +282,114 @@ iframe {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .navbar a {
-        font-size: 18px;
-        margin: 5px 0;
-    }
-
-    .home, .hobbies, .location, .contact {
-        flex-direction: column;
-        height: auto;
-        padding: 80px 5% 40px;
-        text-align: center;
-    }
-
-    .home-content, .hobbies-text, .location-text, .contact-text {
-        max-width: 100%;
-    }
-
-    .home-content h1, .hobbies-text h1, .location-text h1, .contact-text h1 {
-        font-size: 34px;
-    }
-
-    .home-content h3, .hobbies-text h3 {
-        font-size: 20px;
-    }
-
-    .home-content p, .hobbies-text h2, .contact-list li {
+        gap: 8px;
         font-size: 16px;
     }
 
-    .home-sci, .contact-icons {
+    .navbar a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    /* HOME SECTION FIX */
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 100px 5% 60px;
+    }
+
+    .home-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .home-sci {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .home-sci a {
+        margin: 10px;
     }
 
     .btn-box {
         font-size: 14px;
         padding: 10px 20px;
+        margin-top: 15px;
     }
 
+    /* SECTION HEIGHT FIX */
+    .hobbies, .location, .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 80px 5% 60px;
+    }
+
+    /* HOBBIES TEXT */
+    .hobbies-text h1 {
+        font-size: 28px;
+    }
+
+    .hobbies-text h2,
+    .hobbies-text h3 {
+        font-size: 18px;
+    }
+
+    ol {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    /* LOCATION SECTION */
     iframe {
-        width: 100%;
-        height: 300px;
+        width: 100% !important;
+        height: 300px !important;
+        margin-top: 20px;
     }
 
+    /* CONTACT SECTION */
     .contact-text h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .contact-list li {
+        font-size: 16px;
         display: block;
-        margin-bottom: 10px;
+        margin: 10px 0;
+    }
+
+    .contact-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contact-icons a {
+        margin: 10px;
+    }
+
+    /* FIX OVERFLOW AND LINE BREAKS */
+    h1, h2, h3 {
+        word-break: break-word;
+        line-height: 1.3;
     }
 }
