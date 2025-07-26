@@ -40,10 +40,12 @@ body
     font-weight: 500;
     margin-left: 35px;
     transition: 0.3s;
+    transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
 }
 .navbar a:hover{
     color: #fff;
+    transform: scale(1.15);
 }
 
 .navbar a::after {
@@ -68,8 +70,9 @@ body
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(home.jpg );
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -121,6 +124,7 @@ body
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
+    animation: pulse 0.4s ease-in-out;
 }
 .btn-box {
     display: inline-block;
@@ -144,8 +148,9 @@ body
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(wallpaper.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -181,8 +186,9 @@ body
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(wallpaper.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -205,14 +211,16 @@ iframe {
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(wallpaper.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
     text-align: center;
+    padding-bottom: 100px;
 }
 .contact-text h1 {
     font-size: 90px;
@@ -231,10 +239,6 @@ iframe {
     display: block;
 }
 .contact-list li {
-    margin-bottom: 10px;
-    display: block;
-}
-.contact-list li {
     display: inline-block;
     color: #0ef;
     font-size: 20px;
@@ -244,6 +248,7 @@ iframe {
 .contact-list li a:hover {
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
+    animation: pulse 0.4s ease-in-out;
 }
 .contact-icons a {
     display: inline-flex;
@@ -264,4 +269,68 @@ iframe {
     background: #0ef;
     color: #000;
     box-shadow: 0 0 20px #0ef;
+    animation: pulse 0.4s ease-in-out;
+}
+.footer {
+    width: 100%;
+    background: #081b29;
+    padding: 25px 10%;
+    text-align: center;
+    color: #ededed;
+    border-top: 1px solid #0ef;
+    margin-top: 0;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #0ef;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ededed;
+    animation: pulse 0.4s ease-in-out;
+}
+
+.footer-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 20px;
+    color: #0ef;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-icons a:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 15px #0ef;
+    animation: pulse 0.4s ease-in-out;
+}
+.footer-icons a i {
+    transition: transform 0.3s;
+}
+
+@keyframes pulse {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-5px) scale(1.1); }
+    100% { transform: translateY(0) scale(1); }
 }
